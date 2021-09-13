@@ -1,10 +1,10 @@
 package com.example.android.popularlibraries.view
 
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.android.popularlibraries.databinding.ActivityMainBinding
 import com.example.android.popularlibraries.presenter.MainPresenter
+import com.example.android.popularlibraries.utils.Numbers
 
 class MainActivity : AppCompatActivity(), MainView {
 
@@ -17,21 +17,31 @@ class MainActivity : AppCompatActivity(), MainView {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val listener = View.OnClickListener {
-            presenter.counterClick(it.id)
-        }
-
-        binding.buttonCounter1.setOnClickListener(listener)
-        binding.buttonCounter2.setOnClickListener(listener)
-        binding.buttonCounter3.setOnClickListener(listener)
+        setButtonClickListener()
     }
 
-    override fun setButtonText(index: Int, text: String) {
-        when (index) {
-            0 -> binding.buttonCounter1.text = text
-            1 -> binding.buttonCounter2.text = text
-            2 -> binding.buttonCounter3.text = text
+    private fun setButtonClickListener() {
+        binding.buttonCounter1.setOnClickListener {
+            presenter.counterClick(Numbers.ONE)
         }
+        binding.buttonCounter2.setOnClickListener {
+            presenter.counterClick(Numbers.TWO)
+        }
+        binding.buttonCounter3.setOnClickListener {
+            presenter.counterClick(Numbers.THREE)
+        }
+    }
+
+    override fun setButton1Text(text: String) {
+        binding.buttonCounter1.text = text
+    }
+
+    override fun setButton2Text(text: String) {
+        binding.buttonCounter2.text = text
+    }
+
+    override fun setButton3Text(text: String) {
+        binding.buttonCounter3.text = text
     }
 
 }
