@@ -11,7 +11,7 @@ ___
 
 > 5 недель — 10 уроков. 15 часов обучающего контента, 30 часов практики.
 
-* [Урок 1. In Pull request](https://github.com/zurbaevi/android-popular-libraries/pull/1) Архитектура приложения. MVP
+* [Урок 1.](https://github.com/zurbaevi/android-popular-libraries/tree/lesson1) Архитектура приложения. MVP
 * [Урок 2. 16 сент., 20:00 MSK]() MVP: реализация через Moxy, Cicerone
 * [Урок 3. 20 сент., 20:00 MSK]() Реактивное программирование, RxJava 2: введение
 * [Урок 4. 23 сент., 20:00 MSK]() RxJava 2: операторы
