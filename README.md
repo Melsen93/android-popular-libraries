@@ -13,8 +13,8 @@ ___
 
 * [Урок 1.](https://github.com/zurbaevi/android-popular-libraries/pull/1) Архитектура приложения. MVP
 * [Урок 2.](https://github.com/zurbaevi/android-popular-libraries/pull/2) MVP: реализация через Moxy, Cicerone
-* [Урок 3.](https://github.com/zurbaevi/android-popular-libraries/pull/3) Реактивное программирование, RxJava 2: введение
-* [Урок 4.](https://github.com/zurbaevi/android-popular-libraries/pull/4) RxJava 2: операторы
+* [Урок 3.](https://github.com/zurbaevi/android-popular-libraries/pull/3) Реактивное программирование, RxJava 3: введение
+* [Урок 4.](https://github.com/zurbaevi/android-popular-libraries/pull/4) RxJava 3: операторы
 * [Урок 5.](https://github.com/zurbaevi/android-popular-libraries/pull/5) Взаимодействие с сервером
 * [Урок 6. 30 сент., 20:00 MSK]() ORM и хранение данных
 * [Урок 7. 4 окт., 20:00 MSK]() Dependency Injection. Введение в Dagger 2
