@@ -17,7 +17,7 @@ ___
 * [Урок 4.](https://github.com/zurbaevi/android-popular-libraries/pull/4) RxJava 3: операторы
 * [Урок 5.](https://github.com/zurbaevi/android-popular-libraries/pull/5) Взаимодействие с сервером
 * [Урок 6.](https://github.com/zurbaevi/android-popular-libraries/pull/6) ORM и хранение данных
-* [Урок 7. 4 окт., 20:00 MSK]() Dependency Injection. Введение в Dagger 2
+* [Урок 7.]() Dependency Injection. Введение в Dagger 2
 * [Урок 8. 7 окт., 20:00 MSK]() Dagger 2: продолжение
 * [Урок 9. 11 окт., 20:00 MSK]() Две консультации, на которых будет разбор кода в ваших проектах и ответы на вопросы
 #### [Сертификат будет доступен после успешнего окончании курса]()
