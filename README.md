@@ -18,8 +18,8 @@ ___
 * [Урок 5.](https://github.com/zurbaevi/android-popular-libraries/pull/5) Взаимодействие с сервером
 * [Урок 6.](https://github.com/zurbaevi/android-popular-libraries/pull/6) ORM и хранение данных
 * [Урок 7.](https://github.com/zurbaevi/android-popular-libraries/pull/7) Dependency Injection. Введение в Dagger 2
-* [Урок 8.](https://github.com/zurbaevi/android-popular-libraries/pull/8) Dagger 2: продолжение
-* [Урок 9.](https://github.com/zurbaevi/android-popular-libraries/pull/9) Две консультации, на которых будет разбор кода в ваших проектах и ответы на вопросы
+* [Урок 8.]() Dagger 2: продолжение
+* [Урок 9.]() Две консультации, на которых будет разбор кода в ваших проектах и ответы на вопросы
 #### [Сертификат будет доступен после успешнего окончании курса]()
 
 ____
