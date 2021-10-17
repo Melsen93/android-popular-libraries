@@ -1,23 +1,23 @@
 package com.example.android.popularlibraries
 
-import android.app.Application
+import com.example.android.popularlibraries.di.DaggerAppComponent
+import com.example.android.popularlibraries.helpers.schedules.AppSchedulersImpl
 import com.github.terrakok.cicerone.Cicerone
-import com.github.terrakok.cicerone.Router
+import dagger.android.AndroidInjector
+import dagger.android.DaggerApplication
 
-class App : Application() {
-    companion object {
-        lateinit var instance: App
-    }
+class App : DaggerApplication() {
 
-    private val cicerone: Cicerone<Router> by lazy {
-        Cicerone.create()
-    }
+    override fun applicationInjector(): AndroidInjector<App> =
+        DaggerAppComponent
+            .builder()
+            .apply {
+                withContext(applicationContext)
 
-    val navigatorHolder get() = cicerone.getNavigatorHolder()
-    val router get() = cicerone.router
-
-    override fun onCreate() {
-        super.onCreate()
-        instance = this
-    }
+                val cicerone = Cicerone.create()
+                withNavigationHolder(cicerone.getNavigatorHolder())
+                withRouter(cicerone.router)
+                withAppScheduler(AppSchedulersImpl())
+            }
+            .build()
 }
